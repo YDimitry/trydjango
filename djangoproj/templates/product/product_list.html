@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Product detail{% endblock %}
+{% block body %}
+<h2>Product list page</h2>
+    <ul>
+        {% for product in products %}
+            <a href="{% url 'prod:product_detail' product.id %}" > 1 reference</a>
+            <li><a href="{{ product.get_abs_path }}">{{ product.title }}</a> </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

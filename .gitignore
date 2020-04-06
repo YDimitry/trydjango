@@ -1,0 +1,4 @@
+# Default ignored files
+/venv/
+/djangoproj/db.sqlite3
+/.idea/

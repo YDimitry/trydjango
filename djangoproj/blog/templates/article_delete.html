@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Статья{% endblock %}
+{% block body %}
+<h2>Удаление статьи</h2>
+    <form method="post">
+    <h2>Do you want to delete the post {{ object.title }}</h2>
+    <p><input type="submit" value="Yes"/><a href="../">Cancel</a> </p>
+    {% csrf_token %}
+    </form>
+
+{% endblock %}
